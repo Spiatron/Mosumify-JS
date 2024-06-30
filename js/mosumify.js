@@ -10,7 +10,7 @@ const weather_body = document.querySelector('.weather-body');
 
 
 async function checkWeather(city){
-    const api_key = "d27cf763d8a617026b25280fb179fc42";
+    const api_key = "Enter_your_key_here";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
 
