@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosumify</title>
+    <link rel="stylesheet" href="./styles/mosumifystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your city name here" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="mosumifySearchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Ooops Your Location is unavailable !!!!</h1>
+            <img src="./public/images/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="./public/images/snow.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="mosumifyTemperature">0 <sup>°C</sup></p>
+                <p class="mosumifyDescription">Snow</p>
+            </div>
+
+            <div class="weather-details">
+
+                <div class="mosumifyHumidity">
+                    <!-- <i class="fa-sharp fa-solid fa-droplet"></i> -->
+                    <img src="./public/images/droplets.png" alt="">
+                    <div class="text">
+                        <span id="mosumifyHumidity">36%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <!-- <i class="fa-solid fa-wind"></i> -->
+                    <img src="./public/images/tornado.png" alt="">
+                    <div class="text">
+                        <span id="mosumifyWindSpeed">69m/s</span>
+                        <p>Wind</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/mosumify.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
